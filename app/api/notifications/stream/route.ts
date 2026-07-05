@@ -1,5 +1,7 @@
 import { NextRequest } from "next/server";
 import { onEvent, startDemoEventStream } from "@/lib/notification-store";
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 // Server-Sent Events feed. Swap `startDemoEventStream` for real event
 // triggers (GitHub webhooks, scheduled jobs, etc.) in production —
